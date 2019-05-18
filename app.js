@@ -48,7 +48,7 @@ const messageRouter = new MessageRouter({
   operatorRoom: io.of('/operator')
 });
 
-// Serve static html files for the customer and operator clients
+// Serve static html files for the customer and operator client
 app.get('/', (req, res) => {
   res.sendFile(`${__dirname}/static/customer.html`);
 });
